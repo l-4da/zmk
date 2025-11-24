@@ -1,0 +1,16 @@
+description: Sensor-trigger behavior
+
+compatible: "zmk,behavior-sensor"
+
+include: one_param.yaml
+
+properties:
+  sensor:
+    type: phandle
+    required: true
+    description: Sensor device to read.
+
+  threshold:
+    type: int
+    required: true
+    description: Sensor value threshold to trigger this behavior.
